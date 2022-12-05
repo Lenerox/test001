@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿//pozdro dla Karola
+using System.Diagnostics;
 
 [DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
 internal class Program
@@ -12,8 +13,5 @@ internal class Program
         Console.WriteLine(x);
     }
 
-    private string GetDebuggerDisplay()
-    {
-        return ToString();
-    }
+    private string GetDebuggerDisplay() => ToString();
 }
